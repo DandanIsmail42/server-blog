@@ -1,0 +1,49 @@
+Standar API
+
+{root.api}/v1
+SAMPLE:
+http://mern-api.dandanismail.com/v1/auth/login
+
+Standar Status Respose 
+200 - OK                    --> Call API Success
+201 - CREATED               --> Post Success
+400 - BAD REQUEST           --> Error on client side (KEMUNGKINAN SALAH KETIK)
+401 - UNAUTHORIZED          --> User not authorized to the request
+403 - FORBIDDEN             --> User not allowed to access
+404 - NOT FOUND             --> Request Endpoint Not FOUND
+500 - INTERNAL ERROR SERVER --> Error on Server side
+502 - BAD GATEWAY           --> Invalid Response From Another Request
+
+
+GROUP : Authentication
+
+[1] - Login
+{root.api}/{version/auth/register}
+[2] - Register
+{root.api}/{version}/auth/login
+
+req:
+{
+     "name" : "test",
+     "email" : "test@gmail.com",
+     "password": "123123
+}
+
+res :
+{
+     "name" : "test",
+     "email" : "test@gmail.com",
+     "password": "123123
+}
+
+GROUP : BLOG
+
+[1] - Create Blog Post
+[2] - Get Blog Post
+[3] - Update Blog Post
+[4] - Delete Blog Post
+
+
+s45aK5uECeWTDmbc
+
+mongodb+srv://dismail065:s45aK5uECeWTDmbc@cluster0.lmdxzhf.mongodb.net/?retryWrites=true&w=majority
